@@ -9,9 +9,7 @@ import MessageList from './MessageList'
 class App extends Component {
 
   state = {messages:[
-    {author:'Michael', title:'Hello world', content:'Hello there world, this is some content'},
-    {author:'Liz', title:'Dont forget', content:'Can you get some milk while youre at the grocery?'},
-    {author:'Molly', title:'Ruff', content:'Ruff Ruff Ruff Ruff Ruff'},
+
   ]}
 
   updateState = (newMessage) => {
@@ -20,6 +18,17 @@ class App extends Component {
   }
 
   render() {
+    let tempState;
+    fetch('https://jsonplaceholder.typicode.com/comments')
+      .then((res) => {
+        res.json()
+        .then((data) => {
+          tempState = data
+          tempState = tempState[0]
+          console.log("tempState", tempState)
+        })
+      })
+
     return (
       <div className="container">
         <header>

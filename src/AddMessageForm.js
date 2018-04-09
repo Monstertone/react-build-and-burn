@@ -16,8 +16,8 @@ class AddMessageForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    this.props.updateState({author:this.state.author, title:this.state.title, content: this.state.content})
-
+    this.props.updateState({author:this.state.author, title:this.state.title, date:Date(Date.now()).toString(), content: this.state.content})
+    this.setState({author:'', title:'', content:''})
   }
 
   render() {

@@ -7,6 +7,7 @@ const Message = (props) => {
       <div className="single-message-card">
         <b>By:</b> {props.singleMessage.author}<br />
         <b>Title:</b> {props.singleMessage.title}<br />
+        <b>Posted:</b> {props.singleMessage.date}<br />
         <hr />
         {props.singleMessage.content}
       </div>
