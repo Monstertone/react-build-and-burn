@@ -1,28 +1,27 @@
-.App {
+
+.container {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.logo {
+  color:#00b894;
+  font-size: 28px;
+  margin-right:100px;
 }
+.message-list {
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
 }
-
-.App-title {
-  font-size: 1.5em;
+.post-field {
+  text-align: center;
+  color: silver;
 }
-
-.App-intro {
-  font-size: large;
+.post-field::placeholder {
+  text-align: center;
+  color: #f1f1f1;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.single-message-card {
+  text-align: left;
+  padding:10px 50px;
+  margin:10px 0;
+  border: 1px #f2f2f2 solid;
+  border-radius: 3px;
 }
