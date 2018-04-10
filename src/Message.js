@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Message = (props) => {
-  console.log("HAHAH", props.singleMessage)
+  //here each item that was mapped in MessageList.js will be inserted into this template and displayed on the MessageList component
   return (
     <div>
       <div className="single-message-card">
